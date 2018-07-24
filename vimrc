@@ -90,8 +90,9 @@ filetype plugin indent on
 
 set statusline=%{fugitive#statusline()}
 
-set expandtab
-set shiftwidth=2
+set smarttab
+set smartindent
+set shiftwidth=4
 set tabstop=4
 
 hi CursorLine   cterm=underline ctermbg=none ctermfg=none guibg=white guifg=none
@@ -108,8 +109,8 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors=1
 
 let g:airline_powerline_fonts = 1
